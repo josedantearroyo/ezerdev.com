@@ -1,0 +1,54 @@
+---
+import Facebook from "@/icons/Facebook.astro";
+import Youtube from "@/icons/Youtube.astro";
+import Instagram from "@/icons/Instagram.astro";
+import Linkedin from "@/icons/Linkedin.astro";
+const currentYear = new Date().getFullYear();
+---
+<footer>
+    <section class="bg-black text-white p-4">
+        <h4 class="text-2xl text-center my-2">¿Listo para iniciar?</h4>
+        <form class="flex flex-col items-center">
+            <input type="text" class="px-4 py-2 w-full outline-0 mb-2 text-gray-900" placeholder="Nombre completo"/>
+            <input type="number" class="px-4 py-2 w-full outline-0 mb-2 text-gray-900" placeholder="Teléfono"/>
+            <select class="px-4 py-2 outline-0 w-full mb-2 text-gray-900">
+                <option>Desarrollo de sitios web</option>
+            </select>
+            <input type="email" class="px-4 py-2 w-full outline-0 mb-2 text-gray-900" placeholder="Correo electrónico"/>
+            <input type="text" class="px-4 py-2 w-full outline-0 mb-2 text-gray-900"
+                   placeholder="Nombre de la empresa"/>
+            <input type="number" class="px-4 py-2 w-full outline-0 mb-2 text-gray-900" placeholder="Presupuesto"/>
+            <button type="submit" class="px-4 py-2 w-full bg-primary-color text-white">Cotizar mi proyecto</button>
+        </form>
+        <h4 class="text-2xl text-center my-2">Hablemos</h4>
+        <p>ezerdev.marketing@gmail.com</p>
+        <p><span class="text-primary-color">Perú:</span> +51 916 343 540</p>
+        <p class="text-primary-color">Vacantes de trabajo</p>
+        <h4 class="text-2xl text-center my-2">Encuentranos</h4>
+        <ul class="flex justify-center gap-4 text-2xl">
+            <li>
+                <a href="#">
+                    <Facebook/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <Youtube/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <Instagram/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <Linkedin/>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="bg-white p-8">
+        <span class="block text-center">@{currentYear} - ezerdev</span>
+    </section>
+</footer>
